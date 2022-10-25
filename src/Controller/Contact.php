@@ -78,7 +78,7 @@ class Contact extends AbstractController
     {
         $em->remove($contact);
         $em->flush();
-        $this->addFlash('success', 'User was deleted!');
+        $this->addFlash('success', 'User was deleted !');
 
         return $this->redirectToRoute('contact');
     }
